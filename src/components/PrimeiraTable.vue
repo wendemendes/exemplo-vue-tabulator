@@ -5,7 +5,7 @@
     <div class="card-body">
       <div id="table"></div>
 
-<br/>
+      <br/>
       <router-link class="btn btn-secondary" :to="{ name: 'Home' }"> Voltar </router-link>
 
              
