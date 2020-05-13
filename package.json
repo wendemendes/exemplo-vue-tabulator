@@ -24,6 +24,7 @@
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
     "vue-router": "^3.0.1",
+    "vue-select": "^3.10.3",
     "vue-tabulator": "^1.2.2"
   },
   "devDependencies": {
