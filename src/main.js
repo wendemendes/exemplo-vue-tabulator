@@ -38,12 +38,11 @@ import axios from 'axios'
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import vSelect from 'vue-select'
+import SelectBuscaProduto from './components/notafiscal/selectbusca/index.vue';
+
 
 Vue.component('v-select', vSelect)
-
-
-
-
+Vue.component('SelectBuscaProduto', SelectBuscaProduto)
 
 
 Vue.config.productionTip = false;

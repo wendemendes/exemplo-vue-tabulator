@@ -4,18 +4,8 @@
     <br />
     <br />
 
-    <div class="card" style="width: 18rem;">
-      <div class="form-group">
-        <label>Adicionar produto</label>
-        <v-select
-          placeholder="Selecione um produto"
-          :reduce="produto => produto"
-          label="descricao"
-          :options="produtosParaIncluir"
-          @input="adicionarProduto"
-        />
-      </div>
-    </div>
+
+    <Select-Busca-Produto v-on:adicionar-produto="adicionarProduto"></Select-Busca-Produto>
 
     <div class="row">
       <div class="col-lg-8">
@@ -69,6 +59,8 @@
 import axios from "axios";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
+
+
 
 export default{
 
@@ -130,10 +122,9 @@ export default{
       ],
       quantidadeDevolverAuxiliar: 0,
       options: {
-        data: this.itens,
         index: "produtoKey",
         selectable: true,
-        height: "200px",
+        height: "350px",
         layout: "fitColumns",
         //ajaxURL: "http://jsonplaceholder.typicode.com/albums",
         //  pagination: "local",
@@ -228,9 +219,7 @@ export default{
     
 
       if(cell.getField() === 'deletarProduto'){
-            //let tabulatorInstance = this.$refs.table.getInstance();
 
-debugger;
             let posicao = cell.getRow().getPosition();
             cell.getRow().delete();
             this.itens.splice(posicao, 1);
@@ -285,6 +274,7 @@ debugger;
         console.log(item);
       });
     }
+
   }
 };
 </script>
