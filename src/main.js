@@ -17,6 +17,7 @@ import 'tabulator-tables/dist/css/tabulator_site.css'
 //import 'tabulator-tables/dist/css/semantic-ui/tabulator_semantic-ui.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'vue-select/dist/vue-select.css';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //<link href="/css/tabulator/tabulator_site.min.css" rel="stylesheet">
@@ -32,7 +33,7 @@ import 'vue-select/dist/vue-select.css';
 
 </style> */}
 
-
+import underscore from 'vue-underscore';
 import VueAxios from 'vue-axios'
 import axios from 'axios'
 import jsPDF from 'jspdf'
@@ -40,7 +41,9 @@ import autoTable from 'jspdf-autotable'
 import vSelect from 'vue-select'
 import SelectBuscaProduto from './components/notafiscal/selectbusca/index.vue';
 
-
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
+Vue.use(underscore);
 Vue.component('v-select', vSelect)
 Vue.component('SelectBuscaProduto', SelectBuscaProduto)
 
