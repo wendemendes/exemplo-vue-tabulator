@@ -9,7 +9,7 @@ import AjaxTabela from "@/components/AjaxTabela";
 import AjaxTabela2 from "@/components/AjaxTabela2";
 import AjaxTabela3 from "@/components/AjaxTabela3";
 import AjaxTabela4 from "@/components/AjaxTabela4";
-import ExemploModal from "@/components/ExemploModal";
+import ExemploModal from "@/components/ExemploVueBootstrap";
 import TabelaItensExemplo from "@/components/notafiscal/notafiscal.index";
 import Home from "@/components/Home";
 import VueTabulator from 'vue-tabulator';
@@ -39,6 +39,6 @@ export default new Router({
     { path: '/ajax3Tabela', name: 'ajax3Tabela', component: AjaxTabela3 },
     { path: '/ajax4Tabela', name: 'ajax4Tabela', component: AjaxTabela4 },
     { path: '/tabelaItensExemplo', name: 'tabelaItensExemplo', component: TabelaItensExemplo },
-    { path: '/exemploModal', name: 'exemploModal', component: ExemploModal }
+    { path: '/exemploVueBootstrap', name: 'exemploVueBootstrap', component: ExemploModal }
   ]
 });

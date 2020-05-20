@@ -44,7 +44,7 @@
           </li></router-link
         >
 
-        <router-link class="btn btn" :to="{ name: 'exemploModal' }"
+        <router-link class="btn btn" :to="{ name: 'exemploVueBootstrap' }"
           ><li class="list-group-item list-group-item-light">
             Exemplo Modal
           </li></router-link
