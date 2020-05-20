@@ -1,6 +1,6 @@
 <template>
   <div class="card" style="width: 40rem;">
-    <h2 class="card-title">Exemplos tabulator</h2>
+    <h2 class="card-title">Exemplos Vue</h2>
     <div class="card-body">
       <div class="list-group">
         <router-link class="btn btn" :to="{ name: 'primeiraTabela' }"
