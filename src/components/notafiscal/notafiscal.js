@@ -1,65 +1,6 @@
-<template>
-  <div class="card" style="width: 90rem;">
-    <h2 class="card-title">Itens da Nota fiscal</h2>
-    <br />
-    <br />
-
-
-    <Select-Busca-Produto v-on:adicionar-produto="adicionarProduto"></Select-Busca-Produto>
-
-    <div class="row">
-      <div class="col-lg-8">
-        <div id="tabulator-controls" class="table-controls hidden-xs">
-          <button class="btn btn-success" @click.prevent.stop="download()">
-            <i class="fa fa-download"></i> Download CSV
-          </button>
-
-          <button class="btn btn-success" @click.prevent.stop="downloadPdf()">
-            <i class="fa fa-download"></i> Download PDF
-          </button>
-
-          <button class="btn btn-success" @click.prevent.stop="downloadPdf()">
-            <i class="fa fa-download"></i> Download PDF
-          </button>
-
-          <button class="btn btn-success" @click.prevent.stop="downloadExcel()">
-            <i class="fa fa-download"></i> Download EXCEL
-          </button>
-
-          <button
-            @click.prevent.stop="adicionarLinha()"
-            class="btn btn-success"
-          >
-            <i class="fa fa-plus"></i> Adicionar produto
-          </button>
-
-          <button @click.prevent.stop="buscar()" class="btn btn-success">
-            <i class="fa fa-plus"></i> Buscar
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <Vue-Tabulator ref="table" :options="options" v-model="itens"  @cell-click="deletarProduto"/>
-
-    <div class="col-lg-12">
-      <button
-        name="add-row"
-        @click.prevent.stop="gerarNotaFiscal()"
-        class="btn btn-primary"
-      >
-        <i class="fa fa-plus"></i> Gerar nota fiscal
-      </button>
-    </div>
-  </div>
-</template>
-
-
-<script>
 import axios from "axios";
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";
-
 
 
 export default{
@@ -277,4 +218,3 @@ export default{
 
   }
 };
-</script>

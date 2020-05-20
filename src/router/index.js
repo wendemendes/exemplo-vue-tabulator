@@ -9,7 +9,7 @@ import AjaxTabela from "@/components/AjaxTabela";
 import AjaxTabela2 from "@/components/AjaxTabela2";
 import AjaxTabela3 from "@/components/AjaxTabela3";
 import AjaxTabela4 from "@/components/AjaxTabela4";
-import TabelaItensExemplo from "@/components/notafiscal/TableItensExemplo";
+import TabelaItensExemplo from "@/components/notafiscal/notafiscal.index";
 import Home from "@/components/Home";
 import VueTabulator from 'vue-tabulator';
 import jsPDF from 'jspdf'
