@@ -43,6 +43,13 @@
             Exemplo itens nota
           </li></router-link
         >
+
+        <router-link class="btn btn" :to="{ name: 'exemploModal' }"
+          ><li class="list-group-item list-group-item-light">
+            Exemplo Modal
+          </li></router-link
+        >
+        
       </div>
     </div>
   </div>
