@@ -18,6 +18,10 @@ import 'tabulator-tables/dist/css/tabulator_site.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'vue-select/dist/vue-select.css';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'codemirror/lib/codemirror.css';
+import '@toast-ui/editor/dist/toastui-editor.css';
+ 
+
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //<link href="/css/tabulator/tabulator_site.min.css" rel="stylesheet">
@@ -33,6 +37,7 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 </style> */}
 
+import { Editor } from '@toast-ui/vue-editor';
 import underscore from 'vue-underscore';
 import VueAxios from 'vue-axios'
 import axios from 'axios'

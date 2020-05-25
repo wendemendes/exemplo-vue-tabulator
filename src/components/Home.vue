@@ -45,8 +45,14 @@
         >
 
         <router-link class="btn btn" :to="{ name: 'exemploVueBootstrap' }"
-          ><li class="list-group-item list-group-item-light">
+          ><li class="list-group-item list-group-item-dark">
             Exemplo Modal
+          </li></router-link
+        >
+
+             <router-link class="btn btn" :to="{ name: 'editorTexto' }"
+          ><li class="list-group-item list-group-item-light">
+            Editor texto
           </li></router-link
         >
         
